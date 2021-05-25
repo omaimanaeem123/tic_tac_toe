@@ -1,0 +1,4 @@
+its a 2X player tic tac toe game,1st palyer 'X',2nd player 'O',
+ sometimes 'X' win's 
+ sometime 'O' win's 
+ sometimes tie 

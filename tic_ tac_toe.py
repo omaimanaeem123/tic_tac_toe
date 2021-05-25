@@ -222,7 +222,18 @@ my_menu.add_cascade(label="Options", menu=options_menu)
 options_menu.add_command(label="Rest Game", command=reset)
 
 reset()
-
+#exception handling with files
+try:
+    f = open("highscores.txt")
+except FileNotFoundError as e:
+    print(e)
+except exception as e:
+    print(e)
+else:
+    print(f.read())
+    f.close
+finally:
+    print("Finalyy Executing...")
 
 
 
