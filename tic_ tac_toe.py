@@ -224,7 +224,7 @@ options_menu.add_command(label="Rest Game", command=reset)
 reset()
 #exception handling with files
 try:
-    f = open("highscores.txt")
+    f = open("score.txt")
 except FileNotFoundError as e:
     print(e)
 except exception as e:
