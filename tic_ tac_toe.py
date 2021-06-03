@@ -5,11 +5,10 @@ root = Tk()
 root.title('codemy.com-Tic-Tac-Toe')
 #root.geometry("1200x710")
 
+
 # X starts so true
 clicked = True
 count = 0
-
-
 
 
 # disable all the buttons
@@ -87,7 +86,7 @@ def checkifwon():
 	elif b3["text"] == "X" and b5["text"] == "X" and b7["text"]  == "X":
 		b3.config(bg="blue")
 		b5.config(bg="blue")
-		b7.config(bg="v")
+		b7.config(bg="blue")
 		winner = True
 		messagebox.showinfo("Tic Tac Toe", "CONGRATULATIONS!  X Wins!!")
 		disable_all_buttons()
@@ -158,7 +157,7 @@ def checkifwon():
 
 	# Check if tie
 	if count == 9 and winner == False:
-		messagebox.showinfo("Tic Tac Toe", "It's A Tie!\n No One Wins!")
+		messagebox.showinfo("Tic Tac Toe", " SORRY ! It's A Tie!\n No One Wins!")
 		disable_all_buttons()
 				
 # Button clicked function
@@ -219,21 +218,21 @@ root.config(menu=my_menu)
 # Create Options Menu
 options_menu = Menu(my_menu, tearoff=False)
 my_menu.add_cascade(label="Options", menu=options_menu)
-options_menu.add_command(label="Rest Game", command=reset)
+options_menu.add_command(label="Reset Game", command=reset)
 
 reset()
 #exception handling with files
 try:
-    f = open("score.txt")
+    f = open("score.txt" ,'r')
 except FileNotFoundError as e:
     print(e)
 except exception as e:
     print(e)
 else:
     print(f.read())
-    f.close
+    f.close()
 finally:
-    print("Finalyy Executing...")
+    print("Finally Executing...")
 
 
 
