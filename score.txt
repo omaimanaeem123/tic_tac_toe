@@ -1,4 +1,4 @@
-Its a 2X player Tic Tac Toe game,1st palyer 'X',2nd player 'O',
+It's a 2X player Tic Tac Toe game,1st palyer 'X',2nd player 'O',
  sometimes 'X' win's 
  sometimes 'O' win's 
  sometimes tie 
